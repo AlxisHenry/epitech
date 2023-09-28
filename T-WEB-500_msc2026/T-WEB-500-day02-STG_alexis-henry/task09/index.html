@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>CodingPedia</title>
+    <link rel="stylesheet" href="codingpedia.css">
+  </head>
+  <body>
+    <header class="box">
+      <h1>Bienvenue</h1>
+      <nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="php.html">PHP</a></li>
+					<li><a href="sql.html">SQL</a></li>
+				</ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <article>
+          Ce site est trop bien, il va tout vous apprendre.
+        </article>
+        <article>
+          <form>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div>
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Your email">
+            </div>
+            <div>
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" placeholder="Your age" min="3" max="99">
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your phone number" maxlength="10">
+            </div>
+            <div>
+              <span>Sex</span>
+              <div class="radios">
+                <div>
+                  <input type="radio" id="male" name="sex" value="male" checked>
+                  <label for="male">Male (selected)</label>
+                </div>
+                <div>
+                  <input type="radio" id="female" name="sex" value="female">
+                  <label for="female">Female</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+              <label for="technology">Technology</label>
+              <select name="technology" id="technology">
+                <option value="PHP">PHP</option>
+                <option value="SQL">SQL</option>
+              </select>
+            </div>
+            <div>
+              <label for="question">Question</label>
+              <textarea name="question" id="question" cols="30" rows="10" required></textarea>
+            </div>
+            <button type="submit">Envoyer ma question</button>
+          </form>
+        </article>
+      </main>
+      <aside class="box">
+        <p>Hello, my name is <strong>Alexis</strong> and I am a student at <strong>Epitech</strong> in <strong>Strasbourg</strong>.</p>
+      </aside>
+    </div>
+    <footer class="box">
+      <address>HENRY Alexis - alexis.henry@epitech.eu</address>
+    </footer>
+    <script src="codingpedia.js"></script>
+  </body>
+</html>

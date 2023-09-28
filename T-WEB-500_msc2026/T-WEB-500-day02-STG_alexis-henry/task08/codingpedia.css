@@ -1,0 +1,62 @@
+body {
+  background-color: grey;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.box {
+  background-color: white;
+  border: solid black 2px;
+	margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+}
+
+.moving_square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: move 5s;
+  animation-iteration-count: 5;
+}
+
+@keyframes move {
+  0% {
+    background-color: red;
+    transform: translate(0, 0);
+  }
+  25% {
+    background-color: green;
+    transform: translate(0, 300px);
+  }
+  50% {
+    background-color: blue;
+    transform: translate(300px, 300px);
+  }
+  75% {
+    background-color: yellow;
+    transform: translate(300px, 0);
+  }
+  100% {
+    background-color: red;
+    transform: translate(0, 0);
+  }
+}
