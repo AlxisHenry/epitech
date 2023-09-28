@@ -34,11 +34,8 @@ do
     echo "${repo_name} already exists..."
   else
 		git clone "git@github.com:EpitechMscProPromo2026/${repo_name}.git"
-		rm -rf $repo_name/.git
-		if [ "$(find  ${repo_name} -maxdepth 1 -type f -not -name '.git' | wc -l)" -eq 0 ]; then
-			rm -rf ${repo_name}
-		else
-			rm -rf "${repo_name}/T-${type}-${code}_day${fday}.pdf"
+		rm -rf $repo_name/.git "${repo_name}/T-${type}-${code}_day${fday}.pdf"
+		if [ "$(ls -A ${repo_name})" ]; then
 			git add $repo_name
 			git commit -m "Push ${repo_name}."
 			git push
