@@ -39,6 +39,9 @@ do
 			git add $repo_name
 			git commit -m "Push ${repo_name}."
 			git push
+		else
+			rm -rf $repo_name
+			echo "Delete ${repo_name}."
 		fi
   fi
 done
