@@ -1,0 +1,51 @@
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: calc(100vh - 40px);
+}
+
+header {
+	background-color: lightskyblue;
+	height: 15vh;
+}
+
+.section {
+	height: 20vh;
+	background-color: green;
+	width: 100%;
+}
+
+.articles {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+article {
+	background-color: yellow;
+	height: 20vh;
+	width: 100%;
+}
+
+article.pink, article.purple {
+	display: none;
+}
+
+article.pink {
+	background-color: pink;
+}
+
+article.purple {
+	background-color: purple;
+}
+
+footer {
+	width: 100%;
+	background-color: red;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 15vh;
+}
