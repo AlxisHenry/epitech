@@ -35,14 +35,11 @@ do
   else
 		git clone "git@github.com:EpitechMscProPromo2026/${repo_name}.git"
 		rm -rf $repo_name/.git
-		if [ "$(find  T-WEB-500_msc2026/T-WEB-500-day10-STG_alexis-henry/ -maxdepth 1 -type f -not -name '.git' | wc -l" -eq 0 ]; then
+		if [ "$(find  ${repo_name} -maxdepth 1 -type f -not -name '.git' | wc -l)" -eq 0 ]; then
 			rm -rf ${repo_name}
 		else
-			file="../subjects/T-${type}-${code}_day${fday}.pdf"
 			rm -rf "${repo_name}/T-${type}-${code}_day${fday}.pdf"
-			cp $file ./$repo_name
-			cd ..
-			git add ${root_dir}/${repo_name}
+			git add $repo_name
 			git commit -m "Push ${repo_name}."
 			git push
 		fi
