@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+.projects,
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  .text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .links a {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+  .card {
+    max-width: 100%;
+  }
+  form .part {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 340px) {
+  .page-title h1 {
+    font-size: 3rem;
+  }
+}
