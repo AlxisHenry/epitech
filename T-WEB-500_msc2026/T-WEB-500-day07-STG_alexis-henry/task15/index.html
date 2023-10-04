@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="exercice">
+        <header>15</header>
+        <section>
+          <div>
+            <form action="#" method="POST" class="create container">
+              <h2>Create</h2>
+              <label for="listItem">Name</label>
+              <input type="text" name="listItem" id="listItem" />
+              <label for="type">Type</label>
+              <select name="type" id="type">
+                <option value="" disabled selected>Select option</option>
+                <option value="note">Note</option>
+                <option value="email">Email</option>
+                <option value="todo">Todo</option>
+              </select>
+              <label for="tags">Tags (separate using " ")</label>
+              <input type="text" name="tags" id="tags" />
+              <div>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+            <form action="#" method="POST" class="search container">
+              <h2>Search</h2>
+              <div>
+                <label for="listItem">Name</label>
+                <input type="text" name="listItem" id="listItem" />
+                <label for="reverse-search-txt">Not containing name ?</label>
+                <input
+                  type="checkbox"
+                  name="reverse-search-txt"
+                  id="reverse-search-txt"
+                />
+              </div>
+              <label
+                >Types
+                <div>
+                  <label for="note"
+                    >Note<input type="checkbox" name="types[]" id="note" value="note"
+                  /></label>
+                  <label for="email"
+                    >Email<input type="checkbox" name="types[]" id="email" value="email"
+                  /></label>
+                  <label for="todo"
+                    >Todo<input type="checkbox" name="types[]" id="todo" value="todo"
+                  /></label>
+                </div>
+              </label>
+              <label for="tags">Tags (separate using " ")</label>
+              <input type="text" name="tags" id="tags" />
+              <label for=""
+                >Exclude tags (separate using " ")
+                <input type="text" name="tags-excluded" id="tags-excluded"
+              /></label>
+              <div>
+                <button type="submit">Search</button>
+                <input type="reset" value="Reset" />
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+      <nav>
+        <a href="../task14/index.html" class="btn prev">
+          &larr; Previous Task
+        </a>
+      </nav>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
