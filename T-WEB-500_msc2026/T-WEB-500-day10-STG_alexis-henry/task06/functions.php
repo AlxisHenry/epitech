@@ -116,3 +116,16 @@ function createChats(): string
 	}
 	return $chats;
 }
+
+function loadComments(): string
+{
+	$pdo = pdo();
+	$statement = $pdo->prepare('SELECT * FROM comments;');
+	$statement->execute();
+	$messages = $statement->fetchAll(PDO::FETCH_ASSOC);
+	$comments = '';
+	foreach ($messages as $message) {
+		$comments .= message($message['id'], false, $message['author'], $message['content'], $message['created_at']);
+	}
+	return $comments;
+}
