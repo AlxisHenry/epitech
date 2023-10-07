@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ajax</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="card mx-auto mt-5 w-50 p-3">
+		<form action="">
+			<div class="form-group">
+				<label class="form-label" for="type">Type</label>
+				<input type="text" name="type" id="type" class="form-control" minlength="3" maxlength="10">
+			</div>
+			<div class="form-group mt-2">
+				<label class="form-label" for="brand">Brand</label>
+				<input type="text" name="brand" class="form-control" id="brand" minlength="2" maxlength="20">
+			</div>
+			<div class="form-group mt-2">
+				<label class="form-label" for="price">Price</label>
+				<input type="text" name="price" class="form-control" id="price" minlength="2" maxlength="5">
+			</div>
+			<div class="form-group mt-2">
+				<label for="number" class="form-label">Number</label>
+				<input type="number" name="number" class="form-control" id="number" min="1">
+			</div>
+			<button type="submit" class="search btn btn-primary mt-3">Search</button>
+		</form>
+		<table class="table table-striped mt-3">
+			<thead>
+				<tr>
+					<th>Type</th>
+					<th>Brand</th>
+					<th>Price</th>
+					<th>Number</th>
+					<th>Stock</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+
+	<div class="container mx-auto mt-5 w-50 p-3">
+		<button type="button" class="btn btn-primary" id="showModalBtn">Show Modal Example</button>
+		<div class="modal" id="myModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Bootstrap Modal Example</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						This is a Bootstrap modal. You can add any content here.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/bootstrap/js/bootstrap.min.js" defer></script>
+	<script src="/js/main.js" defer></script>
+	<script src="./task05.js"></script>
+</body>
+
+</html>
