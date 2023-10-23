@@ -1,4 +1,4 @@
-<img src="https://github.com/EpitechMscProPromo2026/T-WEB-501-STG_11/assets/145432284/693e42cb-1a77-4891-8803-54ce251a94b0=100x100" alt="JQLOGO" width="300" height=300 align="right"/>
+<img src="https://github.com/AlxisHenry/epitech/assets/91117127/1d4f7806-6b8d-48a8-8420-7fb2580ecca0" alt="JQLOGO" width="300" height=300 align="right"/>
 
 # Welcome to JobQuest :rocket:
 
