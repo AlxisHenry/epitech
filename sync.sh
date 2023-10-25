@@ -1,49 +1,111 @@
 #!/bin/bash
 
-echo "Enter the type (PRE, WEB, etc.):"
-read type
-echo "Enter the repository code (500/501):"
-read code
+source .env;
+clear;
 
-if [ -z "${type}" ]; then
-  echo "Type cannot be empty. Exiting..."
-  exit 1
+function selected() {
+	echo -e "\nSelected ${1}: \e[0;33m${2}\e[0m"
+}
+
+function chooseType() {
+	echo -e "Type of the repository [\e[0;33mWEB\e[0m]"
+	printf '> '
+	read type
+	if [ -z "${type}" ]; then
+		type="WEB"
+	fi
+	type=$(echo $type | tr '[:lower:]' '[:upper:]')
+}
+
+function chooseCode() {
+	echo -e "\nCode of the repository [\e[0;33m500\e[0m]"
+	printf '> '
+	read code
+	if [ -z "${code}" ]; then
+		code="500"
+	fi
+}
+
+function chooseTeam() {
+	echo -e "\nWhat's your team ? [\e[0;33mSTG_11\e[0m]"
+	printf '> '
+	read team
+	if [ -z "${team}" ]; then
+		team="STG_11";
+	fi
+}
+
+function isProject() {
+	echo -e "\nIs it a project ? (yes/no) [\e[0;33mno\e[0m]"
+	printf '> '
+	read project
+	if [ "${project}" == "yes" ]; then
+		project=1;
+	else
+		project=0;
+	fi
+}
+
+chooseType;
+chooseCode;
+isProject;
+
+if [ ${project} == 1 ]; then
+	chooseTeam;
+	ROOT="T-${type}-${code}-${team}"
+else
+	ROOT="T-${type}-${code}_${PROJECT_EXTENSION}"
 fi
 
-if [ -z "${code}" ]; then
-	code="500"
+if [ -d "${ROOT}" ]; then
+	echo -e "\nProject \e[0;33m${ROOT}\e[0m already exist, abort.";
+	exit;
 fi
 
-root_dir="T-${type}-${code}_msc2026"
-if [ ! -d "${root_dir}" ]; then
-	echo "Given root directory doesn't exist."
-	exit 1
-fi
-cd $root_dir
+mkdir $ROOT
+cd $ROOT
 
-for ((i=1; i<=10; i++))
-do
-  if [ $i -lt 10 ]; then
-    fday="0$i"
-  else
-    fday="$i"
-  fi
-  repo_name="T-${type}-${code}-day${fday}-STG_alexis-henry"
-  # Check if the repository already exists
-  if [ -d "${repo_name}" ]; then
-    echo "${repo_name} already exists..."
-  else
-		git clone "git@github.com:EpitechMscProPromo2026/${repo_name}.git"
-		rm -rf $repo_name/.git "${repo_name}/T-${type}-${code}_day${fday}.pdf"
-		if [ "$(ls -A ${repo_name})" ]; then
-			git add $repo_name
-			git commit -m "Push ${repo_name}."
-			git push
-		else
-			rm -rf $repo_name
-			echo "Delete ${repo_name}."
+if [ ${project} == 1 ]; then
+	repository="T-${type}-${code}-${team}";
+	git clone "git@github.com:${PROMOTION_NAME}/${repository}.git" .
+	rm -rf .git
+	if [ -f ".env.example" ]; then
+		echo -e "\n.env.example file found, continue ? (yes/no) [\e[0;33mno\e[0m]"
+		printf '> '
+		read type
+		if ! [ "${type}" == "yes" ]; then
+			echo -e "\nPush aborted."
+			exit; 
 		fi
-  fi
-done
-
-cd ..
+	fi
+else
+	echo -e "";
+	for ((i=1; i<=10; i++))
+	do
+		if [ $i -lt 10 ]; then
+			fday="0$i"
+		else
+			fday="$i"
+		fi
+		repository="T-${type}-${code}-day${fday}-STG_${STUDENT_NAME}"
+		if [ -d "${repository}" ]; then
+			echo "${repository} already exists, skip."
+		else
+			git clone "git@github.com:EpitechMscProPromo2026/${repository}.git" > /dev/null 2>&1
+			if [ $? -ne 0 ]; then
+				echo -e "\e[0;31mError\e[0m: ${repository} doesn't exist on remote, skip.";
+			else
+				rm -rf $repository/.git $repository/*.pdf
+				if [ "$(ls -A ${repository})" ]; then
+					git add $repository > /dev/null 2>&1
+					git commit -m "Push ${repository}." > /dev/null 2>&1
+					git push > /dev/null 2>&1
+					echo -e "\e[0;32mSuccess\e[0m: ${repository} pushed.";
+				else
+					rm -rf $repository
+					echo -e "\e[0;31mError\e[0m: ${repository} is empty, deleted.";
+				fi
+			fi
+		fi
+	done
+fi
