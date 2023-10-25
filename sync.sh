@@ -57,12 +57,11 @@ else
 	ROOT="T-${type}-${code}_${PROJECT_EXTENSION}"
 fi
 
-if [ -d "${ROOT}" ]; then
-	echo -e "\nProject \e[0;33m${ROOT}\e[0m already exist, abort.";
-	exit;
+if ! [ -d "${ROOT}" ]; then
+	mkdir $ROOT
+	echo -e "\n\e[0;32mSuccess\e[0m: ${ROOT} created."
 fi
 
-mkdir $ROOT
 cd $ROOT
 
 if [ ${project} == 1 ]; then
@@ -89,7 +88,7 @@ else
 		fi
 		repository="T-${type}-${code}-day${fday}-STG_${STUDENT_NAME}"
 		if [ -d "${repository}" ]; then
-			echo "${repository} already exists, skip."
+			echo -e "\e[0;31mError\e[0m: ${repository} already exists, skip."
 		else
 			git clone "git@github.com:EpitechMscProPromo2026/${repository}.git" > /dev/null 2>&1
 			if [ $? -ne 0 ]; then
