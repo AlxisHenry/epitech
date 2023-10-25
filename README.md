@@ -3,7 +3,7 @@
 This is a repository containing all my courses and projects at Epitech Strasbourg.
 
 ## Table of contents
-1. [How to use it ?](#how-to-use-it)
+1. [How to use it ?](#how-to-use-it-)
 2. [Technologies](#technologies)
 3. [Authors](#authors)
 
