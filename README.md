@@ -9,7 +9,7 @@ This is a repository containing all my courses and projects at Epitech Strasbour
 
 ## How to use it ?
 
-Create a repository on your github to host your courses and project.
+Create a repository on your github to host your courses and project. Then clone it and follow the steps below.
 
 ```bash
 $ git clone git@github.com:<username>/<repository>.git
@@ -37,7 +37,7 @@ PROMOTION_NAME="<promotion>" # Like <EpitechMscProPromo2026>
 PROJECT_EXTENSION="<project_extension>" # Like <msc2026>
 ```
 
-Now you have just to run the `sync.sh` script !
+Now run the `sync.sh` script and follow the instructions.
 
 ```
 $ bash sync.sh
