@@ -12,8 +12,8 @@ This is a repository containing all my courses and projects at Epitech Strasbour
 Create a repository on your github to host your courses and project.
 
 ```bash
-git clone git@github.com:<username>/<repository>.git
-cd <repository>
+$ git clone git@github.com:<username>/<repository>.git
+$ cd <repository>
 ```
 
 First, retrieve the sync script and the environment configuration file from this repository using the command below.
@@ -40,7 +40,7 @@ PROJECT_EXTENSION="<project_extension>" # Like <msc2026>
 Now you have just to run the `sync.sh` script !
 
 ```
-bash sync.sh
+$ bash sync.sh
 ```
 
 ## Technologies
