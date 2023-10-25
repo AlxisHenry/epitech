@@ -1,4 +1,4 @@
-# Epitech courses :rocket:
+# Epitech courses :school_satchel:
 
 This is a repository containing all my courses and projects at Epitech Strasbourg.
 
