@@ -56,7 +56,7 @@ Examples:
   ./sync.sh -t WEB -c 501 -p -T STG_11
   ./sync.sh --type WEB --code 500 --project --team STG_11
 
-Note: If you don't specify an option, the program will ask you.
+Note: If you dont specify an option, the program will ask you.
 
 Note: You can use the interactive mode by running the program without any option.
   ./sync.sh
