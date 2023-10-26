@@ -37,10 +37,35 @@ PROMOTION_NAME="<promotion>" # Like <EpitechMscProPromo2026>
 PROJECT_EXTENSION="<project_extension>" # Like <msc2026>
 ```
 
+First read the help of the sync script.
+
+```bash
+$ bash sync.sh -h
+Usage: ./sync.sh [options]
+
+Options:
+  -h, --help                    Display this help message.
+  -t, --type                    Type of the repository.
+  -c, --code                    Code of the repository.
+  -p, --project                 Is it a project ?
+  -T, --team                    Team of the repository.
+
+Examples:
+  ./sync.sh
+  ./sync.sh -t WEB -c 500
+  ./sync.sh -t WEB -c 501 -p -T STG_11
+  ./sync.sh --type WEB --code 500 --project --team STG_11
+
+Note: If you don't specify an option, the program will ask you.
+
+Note: You can use the interactive mode by running the program without any option.
+  ./sync.sh
+```
+
 Now run the `sync.sh` script and follow the instructions.
 
 ```
-$ bash sync.sh
+$ bash sync.sh [options]
 ```
 
 ## Technologies
