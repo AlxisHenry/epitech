@@ -13,9 +13,15 @@ jobs:
 
             - name: Run technologies.sh
               run: |
-                  bash technologies.sh
-                  git config user.name github-actions
-                  git config user.email github-actions@github.com
-                  git add .
-                  git commit -m "GitHub Actions - Update technologies.md"
-                  git push
+                bash technologies.sh
+                git config user.name github-actions
+                git config user.email github-actions@github.com
+
+                # Check if there are changes to commit
+                if [[ -n "$(git status --porcelain)" ]]; then
+                    git add .
+                    git commit -m "GitHub Actions - Update technologies.md"
+                    git push
+                else
+                    echo "No changes to commit."
+                fi
