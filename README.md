@@ -2,6 +2,8 @@
 
 This is a repository containing all my courses and projects at Epitech Strasbourg.
 
+> You have access to the percentage of technologies used in each courses and projects [here](https://github.com/AlxisHenry/epitech/blob/master/technologies.md).
+
 ## Table of contents
 1. [How to use it ?](#how-to-use-it-)
 2. [Technologies](#technologies)
