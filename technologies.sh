@@ -25,6 +25,7 @@ for folder in $folders; do
     find_command+=" -name '*.*'"
     total_files=$(eval $find_command | wc -l)
     extensions=$(eval $find_command | sed -n 's/.*\.\(.*\)$/\1/p' | sort | uniq -c | awk '$1 > 1 {printf "| %s | %d | %.2f%% |\n", $2, $1, ($1 / '"$total_files"' * 100)}')
+    lowerFolderName=$(echo "$folderName" | tr '[:upper:]' '[:lower:]')
 
     cd ..
 
@@ -34,7 +35,7 @@ for folder in $folders; do
     echo "| Extension | Occurrences | Percentage |" >> $file;
     echo "| --------- | ----------- | ---------- |" >> $file;
     echo -e "$extensions" >> $file;
-    echo "> If you want to see the notes of the course, click [here]($grade_url/$folderName)." >> $file;
+    echo "> If you want to see the notes of the course, click [here]($grade_url/$lowerFolderName)." >> $file;
 
 done
 
