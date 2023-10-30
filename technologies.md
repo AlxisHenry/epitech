@@ -7,14 +7,14 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | java | 39 | 100.00% |
-> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//T-JAV-500_msc2026).
+> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-jav-500_msc2026).
 
 ## T-PRE-500_msc2026
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-PRE-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | py | 70 | 100.00% |
-> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//T-PRE-500_msc2026).
+> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-pre-500_msc2026).
 
 ## T-WEB-500_msc2026
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-WEB-500_msc2026).<br>
@@ -29,7 +29,7 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | sql | 2 | 1.35% |
 | ts | 2 | 1.35% |
 | tsx | 15 | 10.14% |
-> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//T-WEB-500_msc2026).
+> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-web-500_msc2026).
 
 ## T-WEB-501-STG_11
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-WEB-501-STG_11).<br>
@@ -40,4 +40,4 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | json | 7 | 2.99% |
 | jsx | 53 | 22.65% |
 | php | 138 | 58.97% |
-> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//T-WEB-501-STG_11).
+> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-web-501-stg_11).
