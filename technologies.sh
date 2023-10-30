@@ -2,6 +2,7 @@ ignored_extensions=("svg" "md" "gitignore" "example" "mp3" "jpg" "txt" "png" "jp
 folders=$(ls -d T-*/)
 file="./technologies.md"
 repo_url="https://github.com/AlxisHenry/epitech/tree/master/"
+grade_url="https://epitech-grades.vercel.app/semesters/t5/"
 
 echo "# Technologies used" > $file
 
@@ -29,10 +30,11 @@ for folder in $folders; do
 
     echo "" >> $file;
     echo "## $folderName" >> $file;
-    echo "You can be redirected to the folder by clicking [here]($repo_url/$folderName)." >> $file;
+    echo "You can browse the code, by clicking [here]($repo_url/$folderName).<br>" >> $file;
     echo "| Extension | Occurrences | Percentage |" >> $file;
     echo "| --------- | ----------- | ---------- |" >> $file;
     echo -e "$extensions" >> $file;
+    echo "> If you want to see the notes of the course, click [here]($grade_url/$folderName)." >> $file;
 
 done
 
