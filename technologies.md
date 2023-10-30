@@ -6,7 +6,7 @@
 You can be redirected to the folder by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-JAV-500_msc2026).
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
-| java | 27 | 100.00% |
+| java | 39 | 100.00% |
 
 ## T-PRE-500_msc2026
 You can be redirected to the folder by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-PRE-500_msc2026).
