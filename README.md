@@ -39,6 +39,14 @@ PROMOTION_NAME="<promotion>" # Like <EpitechMscProPromo2026>
 PROJECT_EXTENSION="<project_extension>" # Like <msc2026>
 ```
 
+Configure `technologies.sh`:
+
+```bash
+$ cat technologies.sh
+repo_url="<url-repository>"
+grade_url="<grade-website-url"
+```
+
 First read the help of the sync script.
 
 ```bash
