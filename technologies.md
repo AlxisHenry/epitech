@@ -6,7 +6,7 @@
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-JAV-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
-| java | 39 | 100.00% |
+| java | 48 | 100.00% |
 > If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-jav-500_msc2026).
 
 ## T-PRE-500_msc2026
