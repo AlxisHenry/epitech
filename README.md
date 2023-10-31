@@ -44,7 +44,7 @@ Configure `technologies.sh`:
 ```bash
 $ cat technologies.sh
 repo_url="<url-repository>"
-grade_url="<grade-website-url"
+grade_url="<grade-website-url>"
 ```
 
 First read the help of the sync script.
