@@ -141,23 +141,27 @@ cd $ROOT
 hasCommit=false;
 
 if [ ${project} == 1 ]; then
-	repository="T-${type}-${code}-${team}";
-	git clone "git@github.com:${PROMOTION_NAME}/${repository}.git" . > /dev/null 2>&1
-	rm -rf $repository/.git $repository/*.pdf
-	if [ -f "${repository}/.env.example" ]; then
-		echo -e "\n.env.example file found, continue ? (yes/no) [\e[0;33mno\e[0m]"
-		printf '> '
-		read type
-		if ! [ "${type}" == "no" ]; then
-			echo -e "\nPush aborted."
-			exit; 
+		repository="T-${type}-${code}-${team}";
+		if [ -d "${repository}" ]; then
+			echo -e "\e[0;31mError\e[0m: ${repository} already exists, skip.";
+		else
+			git clone "git@github.com:${PROMOTION_NAME}/${repository}.git" . > /dev/null 2>&1
+			rm -rf .git
+			if [ -f ".env.example" ]; then
+				echo -e "\n.env.example file found, continue ? (yes/no) [\e[0;33mno\e[0m]"
+				printf '> '
+				read type
+				if ! [ "${type}" == "no" ]; then
+					echo -e "\nPush aborted."
+					exit; 
+				fi
+			fi
+			cd ..
+			git add $repository > /dev/null 2>&1
+			git commit -m "Push ${repository}." > /dev/null 2>&1
+			hasCommit=true;
+			echo -e "\n\e[0;32mSuccess\e[0m: ${repository} added.";
 		fi
-	fi
-	echo $PWD;
-	git add $repository
-	git commit -m "Push ${repository}."
-	hasCommit=true;
-	echo -e "\e[0;32mSuccess\e[0m: ${repository} added.";
 else
 	echo -e "";
 	for ((i=1; i<=10; i++))
@@ -190,8 +194,7 @@ else
 	done
 fi
 
-echo $hasCommit
 if [ ${hasCommit} == true ]; then
-	git push;
-	echo -e "\e[0;32mSuccess\e[0m: Pushed to remote.";
+	git push > /dev/null 2>&1
+	echo -e "\n\e[0;32mSuccess\e[0m: Pushed to remote.\n";
 fi
