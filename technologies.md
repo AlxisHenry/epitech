@@ -9,6 +9,19 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | java | 103 | 100.00% |
 > If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-jav-500_msc2026).
 
+## T-JAV-501-STG_11
+You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-JAV-501-STG_11).<br>
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+| css | 7 | 2.20% |
+| fxml | 12 | 3.77% |
+| html | 213 | 66.98% |
+| java | 68 | 21.38% |
+| js | 10 | 3.14% |
+| json | 3 | 0.94% |
+| xml | 3 | 0.94% |
+> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-jav-501-stg_11).
+
 ## T-PRE-500_msc2026
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-PRE-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
