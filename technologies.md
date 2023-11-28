@@ -2,6 +2,14 @@
 **Note**: This file is generated automatically. Do not edit it manually.<br/>
 **Note**: some extensions are ignored (e.g. .gitignore, .example, .md, .svg, .mp3, .jpg, .txt, .png, .jpeg, .gif, .sh)
 
+## T-CEN-500-STG_11
+You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-CEN-500-STG_11).<br>
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+| pdf | 10 | 71.43% |
+| xlsx | 3 | 21.43% |
+> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-cen-500-stg_11).
+
 ## T-JAV-500_msc2026
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-JAV-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
