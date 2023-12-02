@@ -28,6 +28,13 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | xml | 3 | 3.23% |
 > If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-jav-501-stg_11).
 
+## T-NSA-500_msc2026
+You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-NSA-500_msc2026).<br>
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+| yml | 8 | 66.67% |
+> If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-nsa-500_msc2026).
+
 ## T-PRE-500_msc2026
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-PRE-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
