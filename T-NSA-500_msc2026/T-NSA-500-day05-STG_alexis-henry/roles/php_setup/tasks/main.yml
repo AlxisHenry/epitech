@@ -1,0 +1,33 @@
+- name: Install PHP and required modules
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - php-cli
+    - php-fpm
+    - php-json
+    - php-pdo
+    - php-mysql
+    - php-zip
+    - php-gd
+    - php-mbstring
+    - php-curl
+    - php-xml
+    - php-pear
+    - php-bcmath
+    - php-intl
+  become: yes
+
+- name: Set timezone in php.ini
+  lineinfile:
+    path: /etc/php/7.4/fpm/php.ini
+    regexp: '^;?date.timezone ='
+    line: 'date.timezone = Europe/Paris'
+  become: yes
+
+- name: Ensure PHP-FPM service is running and enabled
+  service:
+    name: php7.4-fpm
+    state: started
+    enabled: yes
+  become: yes

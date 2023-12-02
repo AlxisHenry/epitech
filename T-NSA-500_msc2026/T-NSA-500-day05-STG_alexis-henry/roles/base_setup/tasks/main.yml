@@ -1,0 +1,19 @@
+- name: Update system packages
+  apt:
+    update_cache: yes
+    upgrade: dist
+
+- name: Install required packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - git
+    - curl
+    - htop
+    - curl
+    - sudo
+    - unzip
+    - python3
+    - python3-pip
+  become: yes

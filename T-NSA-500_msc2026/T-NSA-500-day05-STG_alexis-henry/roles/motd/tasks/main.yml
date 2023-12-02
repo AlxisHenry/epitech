@@ -1,0 +1,5 @@
+- name: Copy custom message of the day
+  copy:
+    src: motd
+    dest: /etc/motd
+  become: yes

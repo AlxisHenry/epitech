@@ -1,0 +1,12 @@
+---
+- name: DevOps Seminar Playbook
+  hosts: localhost
+  become: yes
+  roles:
+    - hostname
+    - user_creation
+    - motd
+    - base_setup
+    - nginx_setup
+    - php_setup
+    - mariadb_setup

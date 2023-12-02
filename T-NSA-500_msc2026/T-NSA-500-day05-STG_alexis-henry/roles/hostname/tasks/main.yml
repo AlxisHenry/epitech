@@ -1,0 +1,4 @@
+- name: Set hostname to nsapoold05
+  hostname:
+    name: nsapoold05
+  become: yes
