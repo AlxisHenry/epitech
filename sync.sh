@@ -191,6 +191,7 @@ else
 fi
 
 if [ ${hasCommit} == true ]; then
+	make clean > /dev/null 2>&1
 	git push > /dev/null 2>&1
 	echo -e "\n\e[0;32mSuccess\e[0m: Pushed to remote.\n";
 fi
