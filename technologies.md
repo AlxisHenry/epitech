@@ -32,7 +32,8 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-NSA-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
-| yml | 8 | 66.67% |
+| sql | 3 | 18.75% |
+| yml | 9 | 56.25% |
 > If you want to see the notes of the course, click [here](https://epitech-grades.vercel.app/semesters/t5//t-nsa-500_msc2026).
 
 ## T-PRE-500_msc2026
