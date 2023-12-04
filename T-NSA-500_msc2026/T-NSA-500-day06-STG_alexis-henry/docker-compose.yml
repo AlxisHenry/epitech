@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  portainer-nsapoold06:
+    image: portainer/portainer-ce
+    container_name: portainer-nsapoold06
+    ports:
+      - "5555:9000"
+    command: -H unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
+  db_nsapoold06:
+    image: mariadb
+    container_name: db_nsapoold06
+    environment:
+      MYSQL_DATABASE: nsapoold06
+      MYSQL_USER: marvin
+      MYSQL_PASSWORD: Marvin53Xb
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+
+  back_nsapoold06:
+    build: './backend'
+    container_name: back_nsapoold06
+    ports:
+      - "80:5000"
+
+volumes:
+  portainer_data:
+  db_data:
