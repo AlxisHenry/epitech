@@ -1,8 +1,20 @@
 #!/bin/bash
 
-if [ "$#" -eq 0 ]; then
-        echo "Usage: ./script5.sh <username> <hostname>"
-        exit 0;
+if [ "$#" -lt 2 ]; then
+
+        if [ $# -eq 0 ]; then
+            exit 0
+        fi
+
+        if [ "$1" == "ACCEPTED" ]; then
+                attempts=$(grep 'Accepted' /var/log/auth.log | awk '{print "ACCEPTED;" $(NF-3) ";" $(NF-5)}' FS='[ :]+' OFS=';')
+        elif [ "$1" == "FAILED" ]; then
+                attempts=$(grep 'Failed' /var/log/auth.log | awk '{print "FAILED;" $(NF-3) ";" $(NF-5)}' FS='[ :]+' OFS=';');
+        fi
+
+        for line in ${attempts}; do
+                echo "${line}"
+        done
 fi
 
 username=$1;
@@ -10,18 +22,18 @@ hostname=$2;
 
 if [ -z $username ];
 then
-  exit 0;
+        exit 0;
 fi
 
 if [ -z $hostname ];
 then
-  exit 0;
+        exit 0;
 fi
 
-ssh_check=$(ssh -o ConnectTimeout=5 "$username@$hostname" "exit" 2>&1)
+attempt=$(ssh -o ConnectTimeout=5 "$username@$hostname" "exit" 2>&1)
 
 if [ $? -eq 0 ]; then
-    echo "ACCEPTED;$hostname;$username";
+        echo "ACCEPTED;$hostname;$username";
 else
-    echo "FAILED;$hostname;$username";
+        echo "FAILED;$hostname;$username";
 fi
