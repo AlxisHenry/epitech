@@ -1,6 +1,14 @@
 #!/bin/bash
 
 if [ "$#" -ne 3 ]; then
+    if [[ "$#" == 1 ]] & [[ "$1" =~ ^[0-9]+$ ]]; then
+	for i in {1..10}
+	do
+		echo $(($i * $1));
+	done
+	exit 1
+    fi
+
     echo "Usage: $0 <operand1> <operator> <operand2>"
     exit 1
 fi
