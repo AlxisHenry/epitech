@@ -2,7 +2,7 @@ ignored_extensions=("svg" "md" "gitignore" "example" "mp3" "jpg" "txt" "png" "jp
 folders=$(ls -d T-*/)
 file="./technologies.md"
 repo_url="https://github.com/AlxisHenry/epitech/tree/master/"
-grade_url="https://epitech-grades.vercel.app/semesters/t5/"
+grade_url="https://epitech.alexishenry.eu/semesters/t5/"
 
 echo "# Technologies used" > $file
 
