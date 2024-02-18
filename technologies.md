@@ -28,6 +28,18 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | xml | 3 | 3.23% |
 > If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-jav-501-stg_11).
 
+## T-JSF-600-STG_11
+You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-JSF-600-STG_11).<br>
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+| js | 3 | 2.86% |
+| json | 7 | 6.67% |
+| otf | 14 | 13.33% |
+| ts | 54 | 51.43% |
+| tsx | 22 | 20.95% |
+| yaml | 2 | 1.90% |
+> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-jsf-600-stg_11).
+
 ## T-NSA-500_msc2026
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-NSA-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
