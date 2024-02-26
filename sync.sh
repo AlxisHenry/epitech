@@ -83,11 +83,12 @@ function chooseTeam() {
 		selected "team" "${team}";
 		return;
 	fi
-	echo -e "\nWhat's your team ? [\e[0;33mSTG_11\e[0m]"
+	defaultTeam="STG_${STUDENT_NAME}";
+	echo -e "\nWhat's your team ? [\e[0;33m${defaultTeam}\e[0m]"
 	printf '> '
 	read team
 	if [ -z "${team}" ]; then
-		team="STG_11";
+		team="${defaultTeam}"
 	fi
 }
 
