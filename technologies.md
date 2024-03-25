@@ -10,6 +10,15 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | xlsx | 3 | 21.43% |
 > If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-cen-500-stg_11).
 
+## T-DEV-600-STG_1
+You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-DEV-600-STG_1).<br>
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+| json | 5 | 10.42% |
+| ts | 16 | 33.33% |
+| tsx | 26 | 54.17% |
+> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-dev-600-stg_1).
+
 ## T-DOP-601-STG_alexis-henry
 You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-DOP-601-STG_alexis-henry).<br>
 | Extension | Occurrences | Percentage |
