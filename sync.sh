@@ -149,9 +149,9 @@ if [ ${project} == 1 ]; then
 			echo -e "\n.env.example file found, continue ? (yes/no) [\e[0;33mno\e[0m]"
 			printf '> '
 			read type
-			if ! [ "${type}" == "no" ]; then
+			if ! [ "${type}" == "yes" ]; then
 				echo -e "\nPush aborted."
-				exit; 
+				exit;
 			fi
 		fi
 		cd ..
