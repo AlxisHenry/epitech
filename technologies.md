@@ -107,3 +107,19 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | jsx | 53 | 22.65% |
 | php | 138 | 58.97% |
 > If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-web-501-stg_11).
+
+## T-WEB-600-STG_11
+You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-WEB-600-STG_11).<br>
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+| conf | 3 | 2.78% |
+| css | 2 | 1.85% |
+| js | 2 | 1.85% |
+| json | 6 | 5.56% |
+| lock | 2 | 1.85% |
+| php | 34 | 31.48% |
+| ts | 6 | 5.56% |
+| tsx | 27 | 25.00% |
+| yaml | 19 | 17.59% |
+| yml | 2 | 1.85% |
+> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-web-600-stg_11).
