@@ -1,7 +1,6 @@
 ignored_extensions=("svg" "md" "gitignore" "example" "mp3" "jpg" "txt" "png" "jpeg" "gif" "sh")
 folders=$(ls -d T-*/)
 file="./technologies.md"
-repo_url="https://github.com/AlxisHenry/epitech/tree/master/"
 
 echo "# Technologies used" >$file
 
@@ -33,6 +32,4 @@ for folder in $folders; do
     echo "| Extension | Occurrences | Percentage |" >>$file
     echo "| --------- | ----------- | ---------- |" >>$file
     echo -e "$extensions" >>$file
-    echo "> If you want to see the notes of the course, click [here]($grade_url/$lowerFolderName)." >>$file
-
 done
