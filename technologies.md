@@ -59,11 +59,6 @@
 | sql | 3 | 18.75% |
 | yml | 9 | 56.25% |
 
-## T-NSA-501-STG_11
-| Extension | Occurrences | Percentage |
-| --------- | ----------- | ---------- |
-
-
 ## T-ORG-600-STG_11
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
