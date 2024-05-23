@@ -3,24 +3,21 @@
 **Note**: some extensions are ignored (e.g. .gitignore, .example, .md, .svg, .mp3, .jpg, .txt, .png, .jpeg, .gif, .sh)
 
 ## T-CEN-500-STG_11
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-CEN-500-STG_11).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | pdf | 10 | 71.43% |
 | xlsx | 3 | 21.43% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-cen-500-stg_11).
+> If you want to see the notes of the course, click [here](/t-cen-500-stg_11).
 
 ## T-DEV-600-STG_1
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-DEV-600-STG_1).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | json | 5 | 10.42% |
 | ts | 16 | 33.33% |
 | tsx | 26 | 54.17% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-dev-600-stg_1).
+> If you want to see the notes of the course, click [here](/t-dev-600-stg_1).
 
 ## T-DOP-601-STG_alexis-henry
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-DOP-601-STG_alexis-henry).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | css | 3 | 6.82% |
@@ -28,24 +25,21 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | js | 4 | 9.09% |
 | php | 9 | 20.45% |
 | ttf | 18 | 40.91% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-dop-601-stg_alexis-henry).
+> If you want to see the notes of the course, click [here](/t-dop-601-stg_alexis-henry).
 
 ## T-DOP-602-STG_1
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-DOP-602-STG_1).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | yml | 2 | 66.67% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-dop-602-stg_1).
+> If you want to see the notes of the course, click [here](/t-dop-602-stg_1).
 
 ## T-JAV-500_msc2026
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-JAV-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | java | 103 | 100.00% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-jav-500_msc2026).
+> If you want to see the notes of the course, click [here](/t-jav-500_msc2026).
 
 ## T-JAV-501-STG_11
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-JAV-501-STG_11).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | css | 5 | 5.38% |
@@ -53,10 +47,9 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | java | 68 | 73.12% |
 | json | 3 | 3.23% |
 | xml | 3 | 3.23% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-jav-501-stg_11).
+> If you want to see the notes of the course, click [here](/t-jav-501-stg_11).
 
 ## T-JSF-600-STG_11
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-JSF-600-STG_11).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | js | 3 | 2.86% |
@@ -65,25 +58,22 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | ts | 54 | 51.43% |
 | tsx | 22 | 20.95% |
 | yaml | 2 | 1.90% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-jsf-600-stg_11).
+> If you want to see the notes of the course, click [here](/t-jsf-600-stg_11).
 
 ## T-NSA-500_msc2026
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-NSA-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | sql | 3 | 18.75% |
 | yml | 9 | 56.25% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-nsa-500_msc2026).
+> If you want to see the notes of the course, click [here](/t-nsa-500_msc2026).
 
 ## T-NSA-501-STG_11
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-NSA-501-STG_11).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-nsa-501-stg_11).
+> If you want to see the notes of the course, click [here](/t-nsa-501-stg_11).
 
 ## T-ORG-600-STG_11
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-ORG-600-STG_11).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | css | 2 | 8.70% |
@@ -91,17 +81,15 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | pdf | 3 | 13.04% |
 | ts | 5 | 21.74% |
 | tsx | 6 | 26.09% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-org-600-stg_11).
+> If you want to see the notes of the course, click [here](/t-org-600-stg_11).
 
 ## T-PRE-500_msc2026
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-PRE-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | py | 70 | 100.00% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-pre-500_msc2026).
+> If you want to see the notes of the course, click [here](/t-pre-500_msc2026).
 
 ## T-WEB-500_msc2026
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-WEB-500_msc2026).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | css | 14 | 9.46% |
@@ -113,10 +101,9 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | sql | 2 | 1.35% |
 | ts | 2 | 1.35% |
 | tsx | 15 | 10.14% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-web-500_msc2026).
+> If you want to see the notes of the course, click [here](/t-web-500_msc2026).
 
 ## T-WEB-501-STG_11
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-WEB-501-STG_11).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | css | 17 | 7.26% |
@@ -124,10 +111,9 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | json | 7 | 2.99% |
 | jsx | 53 | 22.65% |
 | php | 138 | 58.97% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-web-501-stg_11).
+> If you want to see the notes of the course, click [here](/t-web-501-stg_11).
 
 ## T-WEB-600-STG_11
-You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitech/tree/master//T-WEB-600-STG_11).<br>
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | conf | 3 | 2.78% |
@@ -140,4 +126,4 @@ You can browse the code, by clicking [here](https://github.com/AlxisHenry/epitec
 | tsx | 27 | 25.00% |
 | yaml | 19 | 17.59% |
 | yml | 2 | 1.85% |
-> If you want to see the notes of the course, click [here](https://epitech.alexishenry.eu/semesters/t5//t-web-600-stg_11).
+> If you want to see the notes of the course, click [here](/t-web-600-stg_11).
