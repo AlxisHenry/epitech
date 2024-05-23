@@ -7,7 +7,6 @@
 | --------- | ----------- | ---------- |
 | pdf | 10 | 71.43% |
 | xlsx | 3 | 21.43% |
-> If you want to see the notes of the course, click [here](/t-cen-500-stg_11).
 
 ## T-DEV-600-STG_1
 | Extension | Occurrences | Percentage |
@@ -15,7 +14,6 @@
 | json | 5 | 10.42% |
 | ts | 16 | 33.33% |
 | tsx | 26 | 54.17% |
-> If you want to see the notes of the course, click [here](/t-dev-600-stg_1).
 
 ## T-DOP-601-STG_alexis-henry
 | Extension | Occurrences | Percentage |
@@ -25,19 +23,16 @@
 | js | 4 | 9.09% |
 | php | 9 | 20.45% |
 | ttf | 18 | 40.91% |
-> If you want to see the notes of the course, click [here](/t-dop-601-stg_alexis-henry).
 
 ## T-DOP-602-STG_1
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | yml | 2 | 66.67% |
-> If you want to see the notes of the course, click [here](/t-dop-602-stg_1).
 
 ## T-JAV-500_msc2026
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | java | 103 | 100.00% |
-> If you want to see the notes of the course, click [here](/t-jav-500_msc2026).
 
 ## T-JAV-501-STG_11
 | Extension | Occurrences | Percentage |
@@ -47,7 +42,6 @@
 | java | 68 | 73.12% |
 | json | 3 | 3.23% |
 | xml | 3 | 3.23% |
-> If you want to see the notes of the course, click [here](/t-jav-501-stg_11).
 
 ## T-JSF-600-STG_11
 | Extension | Occurrences | Percentage |
@@ -58,20 +52,17 @@
 | ts | 54 | 51.43% |
 | tsx | 22 | 20.95% |
 | yaml | 2 | 1.90% |
-> If you want to see the notes of the course, click [here](/t-jsf-600-stg_11).
 
 ## T-NSA-500_msc2026
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | sql | 3 | 18.75% |
 | yml | 9 | 56.25% |
-> If you want to see the notes of the course, click [here](/t-nsa-500_msc2026).
 
 ## T-NSA-501-STG_11
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 
-> If you want to see the notes of the course, click [here](/t-nsa-501-stg_11).
 
 ## T-ORG-600-STG_11
 | Extension | Occurrences | Percentage |
@@ -81,13 +72,11 @@
 | pdf | 3 | 13.04% |
 | ts | 5 | 21.74% |
 | tsx | 6 | 26.09% |
-> If you want to see the notes of the course, click [here](/t-org-600-stg_11).
 
 ## T-PRE-500_msc2026
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | py | 70 | 100.00% |
-> If you want to see the notes of the course, click [here](/t-pre-500_msc2026).
 
 ## T-WEB-500_msc2026
 | Extension | Occurrences | Percentage |
@@ -101,7 +90,6 @@
 | sql | 2 | 1.35% |
 | ts | 2 | 1.35% |
 | tsx | 15 | 10.14% |
-> If you want to see the notes of the course, click [here](/t-web-500_msc2026).
 
 ## T-WEB-501-STG_11
 | Extension | Occurrences | Percentage |
@@ -111,7 +99,6 @@
 | json | 7 | 2.99% |
 | jsx | 53 | 22.65% |
 | php | 138 | 58.97% |
-> If you want to see the notes of the course, click [here](/t-web-501-stg_11).
 
 ## T-WEB-600-STG_11
 | Extension | Occurrences | Percentage |
@@ -126,4 +113,3 @@
 | tsx | 27 | 25.00% |
 | yaml | 19 | 17.59% |
 | yml | 2 | 1.85% |
-> If you want to see the notes of the course, click [here](/t-web-600-stg_11).
