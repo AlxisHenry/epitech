@@ -1,4 +1,7 @@
-folders="$(ls -d T-*/)"
+source .env;
+
+function makeTeamsImageUrl() {
+        folders="$(ls -d T-*/)"
         teams=()
 
         for folder in $folders; do
@@ -28,3 +31,6 @@ folders="$(ls -d T-*/)"
         else
                 echo "No line with 'Teams](' found in README.md"
         fi
+}
+
+makeTeamsImageUrl;
