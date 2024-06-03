@@ -73,6 +73,11 @@
 | --------- | ----------- | ---------- |
 | py | 70 | 100.00% |
 
+## T-SEC-600-STG_11
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+
+
 ## T-WEB-500_msc2026
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
