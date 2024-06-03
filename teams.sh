@@ -19,7 +19,7 @@ function makeTeamsImageUrl() {
         url="$TEAMS_API_URL"
 
         for team in ${!teamCount[@]}; do
-                url+="${team}-${teamCount[$team]}@"
+                url+="${team}@${teamCount[$team]},"
         done
 
         url=${url::-1}
