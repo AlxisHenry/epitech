@@ -29,6 +29,11 @@
 | --------- | ----------- | ---------- |
 | yml | 2 | 66.67% |
 
+## T-DOP-603-STG_1
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+| yaml | 19 | 100.00% |
+
 ## T-JAV-500_msc2026
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
