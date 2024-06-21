@@ -62,11 +62,11 @@
 ## T-ORG-600-STG_11
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
-| css | 2 | 8.70% |
-| json | 5 | 21.74% |
-| pdf | 3 | 13.04% |
-| ts | 5 | 21.74% |
-| tsx | 6 | 26.09% |
+| css | 2 | 8.33% |
+| json | 6 | 25.00% |
+| pdf | 3 | 12.50% |
+| ts | 5 | 20.83% |
+| tsx | 6 | 25.00% |
 
 ## T-PRE-500_msc2026
 | Extension | Occurrences | Percentage |
