@@ -64,15 +64,6 @@
 | sql | 3 | 18.75% |
 | yml | 9 | 56.25% |
 
-## T-ORG-600-STG_11
-| Extension | Occurrences | Percentage |
-| --------- | ----------- | ---------- |
-| css | 2 | 6.06% |
-| json | 5 | 15.15% |
-| pdf | 13 | 39.39% |
-| ts | 5 | 15.15% |
-| tsx | 6 | 18.18% |
-
 ## T-PRE-500_msc2026
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
