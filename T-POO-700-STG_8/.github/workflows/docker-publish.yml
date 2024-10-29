@@ -1,0 +1,84 @@
+name: publish
+
+on:
+  push:
+    branches: ['main']
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ogesebastien1/timemanager:latest 
+
+
+jobs:
+  publish:
+    name: publish image
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: login
+        run: |
+          echo ${{ secrets.GH_SECRET }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+          
+      # - name: Build & Start Server/Database development and run tests
+      #   run: |
+      #     set -e
+      
+      #     # Create Docker network
+      #     docker network create test_network
+      
+      #     # Start PostgreSQL container
+      #     docker run --name postgres --network test_network -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=db -d postgres:alpine
+      
+      #     # Build Server container
+      #     docker build -f ./Server/Dockerfile.dev -t timemanager-server:dev ./Server
+  
+      #     # Start Server container
+      #     docker run --name server_test --network test_network -e PGUSER=postgres -e PGPASSWORD=postgres -e PGDATABASE=db -e PGPORT=5432 -e PGHOST=postgres -d timemanager-server:dev
+
+      #     # Run tests inside Server container
+      #     docker exec server_test mix test
+      #     exit
+
+      #     # Clean up
+      #     docker stop server_test
+      #     docker rm server_test
+      #     docker stop postgres
+      #     docker rm postgres
+      #     docker network rm test_network
+
+
+      - name: Build and Publish Client production
+        run: |
+           docker build -f ./Client/Dockerfile.prod -t ghcr.io/ogesebastien1/timemanager-client:latest ./Client
+           docker push ghcr.io/ogesebastien1/timemanager-client:latest
+
+      - name: Build and Publish Server production
+        run: |
+          docker build -f ./Server/Dockerfile.prod -t ghcr.io/ogesebastien1/timemanager-server:latest ./Server
+          docker push ghcr.io/ogesebastien1/timemanager-server:latest
+  deploy:
+    needs: publish
+    name: deploy image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: connect and pull
+        uses: appleboy/ssh-action@master
+        with:
+            host: ${{ secrets.SSH_HOST }}
+            username: ${{ secrets.SSH_USER }}
+            key: ${{ secrets.SSH_PRIVATE_KEY }}
+            port: ${{ secrets.SSH_PORT }}
+            script: |    
+              cd ${{ secrets.WORK_DIR }}
+              echo ${{ secrets.GH_SECRET }} | docker login ghcr.io -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+              docker-compose down
+              docker system prune -a -f
+              docker pull ghcr.io/ogesebastien1/timemanager-client:latest
+              docker pull ghcr.io/ogesebastien1/timemanager-server:latest
+              docker compose up -d --build
+
+      - name: cleanup
+        run: rm -rf ~/.ssh
