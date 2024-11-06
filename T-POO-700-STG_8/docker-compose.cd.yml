@@ -1,0 +1,51 @@
+services:
+  client:
+    image: ghcr.io/ogesebastien1/timemanager-client:latest
+    ports:
+      - "4173:4173"
+    environment:
+     - VITE_API_URL="https://api.timemanager.alexishenry.eu/api"
+
+  db:
+    image: postgres:latest
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    networks:
+      - backend
+    ports:
+      - "5432:5432"
+
+  server:
+    image: ghcr.io/ogesebastien1/timemanager-server:latest
+    ports:
+      - "4000:4000"
+    networks:
+      - backend
+    environment:
+      - DATABASE_URL=ecto://postgres:postgres@api.timemanager.alexishenry.eu/postgres
+      - SECRET_KEY_BASE=123
+      - PHX_HOST=localhost
+      - PORT=4000
+      - ADMIN_EMAIL=admin@admin.com
+      - ADMIN_USERNAME=ADMIN
+      - ADMIN_PASSWORD=Sirtl3basahbi
+      - ADMIN_TOKEN=FF5OhR48J598fH7fecvh044mXkxvPoQSpcg6v
+    depends_on:
+      db:
+        condition: service_healthy
+
+
+networks:
+  backend:
+
+volumes:
+  db:
