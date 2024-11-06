@@ -76,16 +76,16 @@
 ## T-POO-700-STG_8
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
-| dev | 3 | 0.71% |
+| dev | 3 | 0.70% |
 | dockerignore | 2 | 0.47% |
-| ex | 55 | 12.94% |
-| exs | 30 | 7.06% |
+| ex | 55 | 12.91% |
+| exs | 30 | 7.04% |
 | ico | 2 | 0.47% |
-| json | 9 | 2.12% |
-| prod | 3 | 0.71% |
-| ts | 80 | 18.82% |
-| vue | 230 | 54.12% |
-| yml | 4 | 0.94% |
+| json | 9 | 2.11% |
+| prod | 3 | 0.70% |
+| ts | 80 | 18.78% |
+| vue | 230 | 53.99% |
+| yml | 5 | 1.17% |
 
 ## T-PRE-500_msc2026
 | Extension | Occurrences | Percentage |
