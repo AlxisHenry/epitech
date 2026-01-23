@@ -8,12 +8,32 @@
 | pdf | 10 | 71.43% |
 | xlsx | 3 | 21.43% |
 
+## T-DAT-901-STG_1
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+| dockerignore | 2 | 2.82% |
+| js | 12 | 16.90% |
+| json | 6 | 8.45% |
+| py | 12 | 16.90% |
+| ts | 4 | 5.63% |
+| tsx | 28 | 39.44% |
+| yaml | 3 | 4.23% |
+
 ## T-DEV-600-STG_1
 | Extension | Occurrences | Percentage |
 | --------- | ----------- | ---------- |
 | json | 5 | 10.42% |
 | ts | 16 | 33.33% |
 | tsx | 26 | 54.17% |
+
+## T-DEV-810-STG_7
+| Extension | Occurrences | Percentage |
+| --------- | ----------- | ---------- |
+| MD | 2 | 4.55% |
+| ipynb | 16 | 36.36% |
+| pkl | 2 | 4.55% |
+| py | 19 | 43.18% |
+| pyc | 5 | 11.36% |
 
 ## T-DOP-601-STG_alexis-henry
 | Extension | Occurrences | Percentage |
